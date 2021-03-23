@@ -1,6 +1,6 @@
 # BatchProcessingApplication1702281
 
-Download the .jar file in order to run the application. You can either run the application on a local Apache Spark cluster or using an AWS EMR and S3 Bucket. Both methods are described below.
+Download the BatchProcessingApplication-1.0.jar file in order to run the application. You can either run the application on a local Apache Spark cluster or using an AWS EMR and S3 Bucket. Both methods are described below.
 
 **Running application on local Apache Spark cluster:**
 
