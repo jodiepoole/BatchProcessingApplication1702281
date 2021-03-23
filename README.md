@@ -1,8 +1,8 @@
 # BatchProcessingApplication1702281
 
-Download the .jar file in order to run the application
+Download the .jar file in order to run the application. You can either run the application on a local Apache Spark cluster or using an AWS EMR and S3 Bucket. Both methods are described below.
 
-Running application on local Spark Apache cluster:
+**Running application on local Apache Spark cluster:**
 
 1. Navigate to your spark directory
 2. Place the .jar file and your text file in the directory
@@ -27,7 +27,7 @@ Running application on local Spark Apache cluster:
 
       	./sbin/stop-all.sh
 
-Running application on AWS EMR instance with Spark Apache cluster:
+**Running application on AWS EMR instance with Spark Apache cluster:**
 
 1. Open the AWS Management Console
 2. Navigate to the S3 Bucket Management Console
