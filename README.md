@@ -35,20 +35,34 @@ Running application on AWS EMR instance with Spark Apache cluster:
 4. Upload the .jar file and any text files you wish to process to the bucket
 5. Navigate to the EMR Management Console
 6. Create a new cluster with the following configuration:
+
 	for S3 folder, select the S3 Bucket you just created
+	
 	for Software Configuration make sure to select Spark
+	
 	for EC2 key pair select Proceed without an EC2 key pair
+	
 7. Wait for the cluster's status to be Waiting
 8. Navigate to the Steps section and selected Add Step with the following configuration:
+	
 	for Step Type, select Spark application
+	
 	for Name, type: 
+	
 		Batch Processing Application
+		
 	for Deploy mode, select Cluster
+	
 	for Spark-submit options, type:
+	
 		--class "BatchProcessingApplication_1702281"
+		
 	for Application Location, navigate to your S3 Bucket and select the .jar file
+	
 	for Arguments, type: (Where YOUR_BUCKET_NAME is the name of your bucket and YOUR_TEXT_FILE_NAME is the name of the file you wish to process)
+	
 		YOUR_BUCKET_NAME YOUR_TEXT_FILE_NAME
+		
 9. Wait until the status of the step is Completed
 10. Navigate to the S3 Bucket Management Console
 11. The output file will be in the bucket under the name "output-" followed by the name of the input file
